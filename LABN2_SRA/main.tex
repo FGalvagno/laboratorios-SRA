@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+%\usepackage[spanish]{babel}
+\usepackage[spanish,es-tabla]{babel}
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+% \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage[a4paper,margin=1in]{geometry}
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[backend=bibtex]{biblatex}
+\usepackage{csquotes}
+\usepackage{float}
+
+\addbibresource{bibliografia.bib}
+
+
+\begin{document}
+
+% agregamos la caratula
+\input{caratula}
+\newpage
+
+% agregamos el indice
+\tableofcontents
+\newpage
+
+
+
+\section{Introducción}
+El objetivo es introducirse en el diseño, armado, medición y análisis de circuitos amplificadores lineales, teniendo en cuenta las fuentes de error del amplificador operacional real, y como se relacionan con las condiciones de entorno del circuito.
+
+\subsection*{Metodología}
+
+\begin{itemize}
+\item[a.] Realizar una sintética introducción teórica. Amplificadores operacionales ideales y reales.
+\item[b.] Analizar los circuitos sumadores propuestos, diseñar los circuitos en función del amplificador indicado y las condiciones de entorno. Debe presentar el desarrollo numérico, todos los cálculos analíticos, las mediciones y la simulación en PSPICE.
+\item[c.] Analizar las condiciones de operación límite para el caso 1.A y 1.B en función de los errores del amplificador elegido y las condiciones de entorno.
+\item[d.] Armar el circuito y hacer las mediciones en laboratorio.
+\item[e.] Finalmente comparar los valores calculados, simulados y medidos, y extraer conclusiones cerca de las diferencias. Analizar las causas.
+\end{itemize}
+
+
+
+\input{analisis}
+\newpage
+
+\input{caso1a}
+\newpage
+
+\input{caso1b}
+\newpage
+ 
+
+
+\end{document}
