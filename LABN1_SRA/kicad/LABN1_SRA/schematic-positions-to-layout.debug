@@ -1,0 +1,3 @@
+work_dir = C:/Users/Facundo Galvagno/Documents/laboratorios-SRA/LABN1_SRA/kicad/LABN1_SRA
+in_pcb_file = LABN1_SRA.kicad_pcb
+root_schematic_file = LABN1_SRA.kicad_sch
