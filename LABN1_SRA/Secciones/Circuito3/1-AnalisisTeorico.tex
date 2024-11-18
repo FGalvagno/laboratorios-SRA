@@ -1,17 +1,17 @@
 \section{Circuito n° 3: Rectificador de precisión }
 
-\begin{figure}
+\subsection{Análisis Teórico}
+
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{Secciones/Circuito3/circuito.png}
-    \caption{Enter Caption}
+    \caption{Circuito del rectificador}
     \label{fig:Circuito3}
 \end{figure}
 
-\subsection{Análisis Teórico}
-
 Para determinar la tensión de salida Vo en función de la tensión de entrada Vin, se considerarán dos casos: cuando la tensión de entrada es positiva, y cuando la tensión de entrada es negativa.
 
-a) \[V_0 = f(V_{in}) con 0V < V_{in}\]
+\[V_0 = f(V_{in}) \ \text{con} \ 0 < V_{in}\]
 
 En estas condiciones, el diodo D2 conduce, mientras que el diodo D1 no, ya que el amplificador U1A se encuentra operando en modo no inversor.
 Inicialmente se analizará el caso en que la tensión de entrada del amplificador U1B se encuentra pasivada, entonces la ecuación de corrientes en el nodo ‘6’ resulta:
@@ -35,6 +35,7 @@ Si ahora se pasiva la tensión de entrada del amplificador U1A, se plantea el di
 \[V_{in} = V_o \frac{15[k\Omega]}{25[k\Omega]}\]
 
 \[V_o = \frac{5}{3}V_{in}\]
+
 Si no se tiene ninguna tensión pasivada, aplicando superposición:
 
 \[V_o = \frac{5}{3}V_{in} - \frac{2}{3}V_{in}\]
@@ -42,7 +43,7 @@ Si no se tiene ninguna tensión pasivada, aplicando superposición:
 \[V_o = V_{in}\]
 
 
-\subsection{V0 = Vin con 0V > Vin}
+\subsection{Vo = Vin con 0 \texorpdfstring{$>$}{>} Vin}
 
 
 En estas nuevas condiciones, el diodo D1 conduce, mientras que el diodo D2 no. Se considerará inicialmente que la tensión a la salida del amplificador U1A se encuentra pasivada. Se plantea el divisor de tensión en el nodo ‘6’:
@@ -88,46 +89,40 @@ Si no se tiene ninguna tensión pasivada, aplicando superposición:
 En resumen, cuando la tensión de entrada es positiva, la tensión de salida es igual a la tensión de entrada, mientras que cuando la tensión de entrada es negativa, la tensión de salida será positiva y de igual amplitud a la de entrada.
 
 
-\subsection{Simulacion}
-Después de encontrar analíticamente la expresión de la tensión de salida en función de aquella de entrada, simulamos el circuito con el software LTSpice. En el
-software, visualizamos la tensión de salida (en verde) para varios valores de tensión de entrada (ver Figuras 25 a 27) y medimos la amplitud de la tensión de salida. Los resultados son reunidos en la tabla de la Figura 28. Para terminar, estos resultados nos permiten graficar la evolución de la amplitud de la señal de salida en función de aquella de la señal de entrada (ver Figura 35 de la sección III.4.).
+\subsection{Simulación}
+Después de encontrar analíticamente la expresión de la tensión de salida en función de aquella de entrada, se simuló el circuito con el software LTSpice. En la figura \ref{fig:TP1_3_Vo1_Vo2_Vin_vs_t}, se visualiza la tensión de salida para una entrada senoidal. 
 
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{Secciones/Circuito3/simulacion10mv.png}
-    \caption{Enter Caption}
-    \label{fig:Simulacion10mv}
+    \includegraphics[width=0.9\linewidth]{Secciones/Circuito3/TP1_3_Vo1_Vo2_Vin_vs_t.png}
+    \caption{Tensiones de salida del rectificador}
+    \label{fig:TP1_3_Vo1_Vo2_Vin_vs_t}
 \end{figure}
 
-\begin{figure}
+Para terminar, se graficó la evolución de la amplitud de la señal de salida en función de aquella de la señal de entrada y se observó que la amplitud maxima para una entrada senoidal es de 4 V.
+
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{Secciones/Circuito3/simulacion100mv.png}
-    \caption{Enter Caption}
-    \label{fig:Simulacion100mv}
+    \includegraphics[width=0.9\linewidth]{Secciones/Circuito3/TP1_3_Vo1_Vo2_vs_Vin.png}
+    \caption{Simulación entrada/salida del rectificador}
+    \label{fig:TP1_3_Vo1_Vo2_vs_Vin}
 \end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{Secciones/Circuito3/simulacion500mv.png}
-    \caption{Enter Caption}
-    \label{fig:Simulacion500mv}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{Secciones/Circuito3/simulacion1v.png}
-    \caption{Enter Caption}
-    \label{fig:Simulacion1v}
-\end{figure}
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{Secciones/Circuito3/tabla1.png}
-    \caption{Enter Caption}
-    \label{fig:Tabla1}
-\end{figure}
-
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c||c|c|c|}
+\hline
+\textbf{Vin} & \textbf{Vout 1} & \textbf{Vout 2} \\ \hline
+10 mV    & 280 mV  & 9.75 mV  \\ \hline
+50 mV   & 394 mV  & 49,7 mV    \\ \hline
+100 mV   & 475 mV   & 99,8 mV   \\ \hline
+500 mV   & 948 mV & 499 mV  \\ \hline
+1 V   & 1,48 V & 1 V  \\ \hline
+2 V   & 2,51 V & 2 V    \\ \hline
+\end{tabular}
+\caption{Tensiones de salida según Vin.}
+\label{tab:TP1_3_Vo1_Vo2_vs_Vin}
+\end{table}
 %\subsection{Experimental}
 
 %En el análisis de modo común:
@@ -147,4 +142,4 @@ En este trabajo de laboratorio, pudimos estudiar tres circuitos y observar sus l
 El primero circuito, amplificador de tensión, solamente permite amplificar con una ganancia experimental de un poco más de 3 en vez de 4 como lo esperábamos según el análisis teórico y la simulación.
 El segundo circuito, cuando lo armamos físicamente, tuvo un comportamiento parecido a lo que pudimos observar en la simulación y durante el análisis teórico.
 Para terminar, el tercer circuito tuvo resultados parecidos a los obtenidos por simulación y análisis teórico para valores de Vin bajos, pero vimos que si
-aumentamos demasiado Vin, el circuito está limitado físicamente por el valor de su alimentación y saturación ocurre.
+aumentamos demasiado Vin, el circuito está limitado físicamente por el valor de su alimentación y ocurre la saturación.

@@ -5,13 +5,11 @@
 Se realiza el análisis teórico del circuito que se muestra en la siguiente figura. 
 
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.70\linewidth]{Secciones/Circuito2/imgCirc2.png}
+    \includegraphics[width=0.7\linewidth]{Circuito2.jpg}
     \caption{Circuito n° 2}
-    \label{fig:Circuito2}
 \end{figure}
-
 
 Inicialmente expresamos v+ y v- en función de Vo planteando el divisor resistivo en el nodo ‘2’ de la figura:
 
@@ -62,14 +60,14 @@ A partir de la relaciones que pudimos encontrar analíticamente, completamos las
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{Secciones/Circuito2/Tabla3.png}
+    \includegraphics[width=0.7\linewidth]{Secciones/Circuito2/Tabla3.png}
     \caption{Valor teórico de la amplitud de la corriente en la carga en función del valor de la carga y de la amplitud de la tensión de entrada}
     \label{fig:IRL_vs_carga}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{Secciones/Circuito2/Tabla4.png}
+    \includegraphics[width=0.7\linewidth]{Secciones/Circuito2/Tabla4.png}
     \caption{Valor teórico de la amplitud de la tensión de salida en función del valor de la carga y de la amplitud de la tensión de entrada}
     \label{fig:Vo_vs_carga}
 \end{figure}
@@ -78,29 +76,48 @@ Cabe aclarar que aquellos valores de tensión de salida que superen Vcc (10V) im
 
 
 \subsection{Simulacion}
-Después de hacer el análisis teórico del circuito, lo simulamos utilizando LTSpice. En el osciloscopio de simulación, medimos la amplitud de la corriente de la carga para distintos valores de la misma y varios valores de tensión de entrada. Los resultados son resentados en la siguiente tabla.
+Después de hacer el análisis teórico del circuito, lo simulamos utilizando LTSpice. En el osciloscopio de simulación, medimos la amplitud de la corriente de la carga para distintos valores de la misma y varios valores de tensión de entrada. Los resultados son presentados en la siguiente tabla.
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.70\linewidth]{Secciones/Circuito2/tabla1.png}
-    \caption{Tabla de corriente de carga}
-    \label{fig:Circuito2Tabla1}
-\end{figure}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{RL [ohm]} & \textbf{I [A] (0.5 V)} & \textbf{I [A] (1 V)} & \textbf{I [A] (2 V)} \\ \hline
+1K    & 498.78 $\mu$  & 999.16 $\mu$  & 2 m \\ \hline
+2K    & 496.9 $\mu$  & 996.2 $\mu$  & 2 m \\ \hline
+5K    & 495.98 $\mu$  & 994 $\mu$  & 1.55 m \\ \hline
+10K   & 493.9 $\mu$  & 771.1 $\mu$  & 783.2 $\mu$ \\ \hline
+\end{tabular}
+\caption{Corriente según la carga RL.}
+\label{tab:iL_vs_RL}
+\end{table}
+Luego, realizando un barrido de $V_{in}$ variando ademas la carga, obtenemos las siguientes gráficas.
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.70\linewidth]{Secciones/Circuito2/simulacion.png}
+    \includegraphics[width=0.70\linewidth]{Secciones/Circuito2/TP1_2_i_vs_Vin_RL.png}
     \caption{Simulacion de la corriente por la carga}
-    \label{fig:Circuito2Simulacion}
 \end{figure}
 
-Para el analisis de la tension de salida Vo con diferentes valores de carga y tension de entrada Vin. 
+Para el analisis de la tension de salida Vo con diferentes valores de carga y tension de entrada Vin:
 
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{RL [ohm]} & \textbf{Vo [V] (0.5 V)} & \textbf{Vo [V] (1 V)} & \textbf{Vo [V] (2 V)} \\ \hline
+1K    & 0.546  & 1.096  & 2.19  \\ \hline
+2K    & 1.092  & 2.19   & 4.38  \\ \hline
+5K    & 2.72   & 5.46   & 8.47  \\ \hline
+10K   & 5.43   & 8.45   & 8.5  \\ \hline
+\end{tabular}
+\caption{Tensión de salida según la carga RL.}
+\label{tab:Vo_vs_RL}
+\end{table}
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.70\linewidth]{Secciones/Circuito2/tabla2.png}
-    \caption{Tabla de tension de salida}
-    \label{fig:Circuito2Tabla2}
+    \includegraphics[width=0.70\linewidth]{Secciones/Circuito2/TP1_2_Vo_vs_Vin_RL.png}
+    \caption{Simulacion de la corriente por la carga}
 \end{figure}
 
 
