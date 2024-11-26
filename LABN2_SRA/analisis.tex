@@ -4,9 +4,16 @@ El siguiente circuito es un un sumador. Debe ser diseñado para las condiciones 
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.90\linewidth]{img/Circuito1.png}
+    \includegraphics[width=0.90\linewidth]{img/esquematico_complete.png}
     \caption{Esquemático del circuito N° 1}
-    \label{fig:esquematico_complete}
+    \label{fig:esquematico}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{img/Circuito1.png}
+    \caption{Esquemático del circuito N° 1}
+    \label{fig:enter-label}
 \end{figure}
 
 \begin{itemize}
@@ -56,7 +63,7 @@ Para calcular la ganancia T, primero pasivamos las fuentes de entrada y se abre 
     \centering
     \includegraphics[width=0.90\linewidth]{img/equivalente_lazo.png}
     \caption{Circuito equivalente para el lazo}
-    \label{fig:equivalente_lazo}
+    \label{fig:esquematico}
 \end{figure}
 
 
@@ -119,14 +126,14 @@ Luego  tomando la ganancia ideal del AO $\left(A_{d} \rightarrow \infty\right)$ 
 
 \subsubsection{Tensión de Offset: Vos}
  
-Para el análisis de este error se utiliza el circuito de la figura \ref{fig:equivalente_vos}. 
+Para el análisis de este error se utiliza el circuito de la figura \ref{fig:equivalentevos}. 
 
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.90\linewidth]{img/equivalente_vos.png}
     \caption{Circuito equivalente para calcular Vos}
-    \label{fig:equivalente_vos}
+    \label{fig:equivalentevos}
 \end{figure}
 
 Se calcula la ganancia de tensión a lazo abierto entre el error $V_{os}$ y la salida.
@@ -151,7 +158,7 @@ Como se toma que el amplificador es ideal la ganancia es ideal $\left(A_{d} \rig
 =  V_{os} \cdot (1 + 2 \cdot \frac {R_f}{R} )
 \]
  
-\subsubsection{Ad \texorpdfstring{$< \infty$}{< ∞}}
+\subsubsection{Ad $ <  \infty $}
 
 Debido a que en la realidad $A_d$ es menor a infinito, debemos considerar el error que aporta.
 
@@ -182,7 +189,7 @@ $$
 $$
 
 
-\subsubsection{RRMC \texorpdfstring{$< \infty$}{< ∞}}
+\subsubsection{RRMC $\le \infty$}
 
 Como la entrada no inversora del amplificador se encuentra directamente conectado a masa el error debido a la RRMC resulta despreciable:
 
@@ -191,14 +198,14 @@ Como la entrada no inversora del amplificador se encuentra directamente conectad
 
 \subsection{Errores AC}
 
-\subsubsection{Ancho de banda de pequeña señal \texorpdfstring{$f_H$}{fH}}
+\subsubsection{Ancho de banda de pequeña señal $f_H$}
 
 
 
 Ancho de banda de pequeña señal $\left(w_{h}=-3[d B]\right)$
 
 Observando la hoja de datos del amplificador LM324, obtenemos que:
-\[f_T = 1 [MHz]\]
+\[f_T = 1,2 [MHz]\]
  
 
 Luego, sabiendo que el ancho de banda en pequeña señal se puede calcular con la siguiente formula: 
@@ -212,7 +219,8 @@ Por lo tanto, reemplazando en la fórmula general,
 \[ w_H = w_{T} \cdot \frac{R}{R+2 R_f} \]
 
 
-\subsubsection{Ancho de banda a plena potencia \texorpdfstring{$f_{HP} (10 V_{pap})$}{fH(10Vpap)} }
+\subsubsection{Ancho de banda a plena potencia \(f_{HP} (10 V_{pap})\) } 
+
 
 Primero obtenemos el Slew Rate, que se refiere a la velocidad máxima a la que el amplificador operacional puede cambiar su salida cuando hay un cambio en la entrada. Se mide como voltaje relativo al tiempo, y la unidad típica utilizada en las hojas de datos es voltios por microsegundo (V/µs):
 
