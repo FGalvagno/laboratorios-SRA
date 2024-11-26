@@ -1,4 +1,4 @@
-\section{Caso 1.a, resistencia interna de la fuente 50 \texorpdfstring{$\Omega$}{Ω}}
+\section{Caso 1.a, resistencia interna de la fuente 50 $\Omega$}
 
 Para este caso, las especificaciones indican que la resistencia interna de la fuente de señal es igual a 50 $\Omega$. Por lo tanto, para no cargar la fuente de señal, la impedancia debe ser mucho mayor a este valor, tomamos como criterio que sea 10 veces mas grande.
 
@@ -28,7 +28,7 @@ De esta manera nuestro diseño cumple con las especificaciones de ganancia, impe
 \vspace{1em}
 
 \subsection{Errores en DC.}
-En primer lugar, obtenemos todos los datos necesarios de la hoja de datos (Figura \ref{fig:caracteristicas}).
+En primer lugar, obtenemos todos los datos necesarios de la hoja de datos:
 
 \begin{figure}[h!]
     \centering
@@ -45,7 +45,7 @@ Luego, si reemplazamos por los valores típicos, en las expresiones tenemos que:
 
 Reemplazando según los datos:
  
-\[ \Delta V_{ios} = I_{pol}^{-} \cdot R_f = 20 nF \cdot 15k\Omega = 300 \mu V \]
+\[ \Delta V_{ios} = I_{pol}^{-} \cdot R_f = 20 nA \cdot 15k\Omega = 300 \mu V \]
 
 \vspace{1em}
 
@@ -68,18 +68,18 @@ El error total DC es igual a:
  
 \subsubsection{Ancho de banda:}
 
- Primero obtenemos los valores correspondiente a nuestro amplificador de la hoja de datos (figura \ref{fig:1a_slew_rate}).
+ Primero obtenemos los valores correspondiente a nuestro amplificador de la hoja de datos:
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=1\linewidth]{img/slewrate_bgw.png}
     \caption{Slew Rate y Producto de ganancia por ancho de banda del LM324}
-    \label{fig:1a_slew_rate}
+    \label{fig:slew_rate}
 \end{figure}
 
 \[ f_H = f_{T} \frac{R}{R+2 R_f} = 1,2 [MHz] \cdot \frac{500}{30500} = 19,67 [kHz] \]
 
-\subsubsection{Ancho de banda de potencia para 10 \texorpdfstring{$V_{pap}$}{Vpap}:}
+\subsubsection{Ancho de banda de potencia para 10 $V_{pap}$:}
 \[ f_{Hp}=7,957[\mathrm{kHz}] \]
 
 
@@ -111,12 +111,12 @@ $\omega_h$ & \multicolumn{2}{c|}{avf}         & \multicolumn{2}{c|}{Error Vector
 \caption{Ganancia normalizada y error vectorial}
 \label{tabla-error}
 \end{table}
-En la siguiente grafica podemos observar en color ojo al modulo del error vectorial, y luego en azul podemos observar a la fase del error.
+En la siguiente gráfica podemos observar en color ojo al modulo del error vectorial, y luego en azul podemos observar a la fase del error.
 El modulo del error aumenta a medida que aumenta la frecuencia, y la fase disminuye.
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.80\linewidth]{img/error_vectorial.png}
+    \includegraphics[width=0.50\linewidth]{img/error_vectorial.png}
     \caption{Gráfica error vectorial}
     \label{fig:errorvectorial}
 \end{figure}
@@ -129,34 +129,37 @@ El modulo del error aumenta a medida que aumenta la frecuencia, y la fase dismin
  
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.80\linewidth]{img/TP2_1_grafico_tiempo.png}
+    \includegraphics[width=1.0\linewidth]{img/Lab2_SalidaTiempo.png}
     \caption{Gráfico de voltaje de salida en el tiempo}
-    \label{fig:1a_tiempo}
+    \label{fig:tiempo}
 \end{figure}
 
-En esta simulación se puede observar que con una entrada de 100 [mV] a 1 [kHz] obtenemos aproximadamente 3[V] de salida
+En esta simulación se puede observar que con una entrada de 100 [mV] a 1 [kHz] obtenemos aproximadamente 2.73[V] de salida (no es 3 debido a la ganancia no infinita y a la resistencia en serie de la fuente).
 
 
 \subsubsection{Simulación de barrido en frecuencia (bode)}
-
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.80\linewidth]{img/TP2_1_grafico_bode_amp.png}
+    \includegraphics[width=0.80\linewidth]{img/Lab2_Bode1_amp.png}
+    \caption{Gráfico de barrido en frecuencia (amplitud)}
+    \label{fig:bode1a}
 \end{figure}
 
+\newpage
+
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.85\linewidth]{img/TP2_1_grafico_bode_fase.png}
-    \caption{Gráfico de barrido en frecuencia}
-    \label{fig:bode1a}
+    \includegraphics[width=0.80\linewidth]{img/Lab2_Bode1_fase.png}
+    \caption{Gráfico de barrido en frecuencia (fase)}
+    \label{fig:bode1f}
 \end{figure}
 
 \subsubsection{Análisis en frecuencia }
 
-Se pueden observar las armónicas de la señal de salida, frente a una señal de entrada de 1kHz.
+Se pueden observar las armónicas de la señal de salida, frente a una señal de entrada de 320 [mV] de amplitud (para que apenas sature la salida) y 1 [kHz].
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=1.0\linewidth]{img/ftt1a.png}
+    \includegraphics[width=1.0\linewidth]{img/Lab2_Fourier.png}
     \caption{Gráfico de la transformada de fourier}
     \label{fig:fft1a}
 \end{figure}
@@ -164,6 +167,8 @@ Se pueden observar las armónicas de la señal de salida, frente a una señal de
 \subsection{Mediciones}
 
 \hspace{1mm} Se realizan las mediciones del circuito para el caso de impedancia de entrada 10 veces mayor que la impedancia de la fuente \((Z_{fte}= 50\Omega)\).
+
+\newpage
 
 \begin{figure}[h!]
     \centering
@@ -185,7 +190,6 @@ Se pueden observar las armónicas de la señal de salida, frente a una señal de
     
 \end{figure}
 
-\newpage
 \hspace{1mm} Se realiza la medición del slew rate.
 \begin{figure}[H]
     \centering
@@ -196,28 +200,35 @@ Se pueden observar las armónicas de la señal de salida, frente a una señal de
 
 Se inyecta una señal escalón al sistema. Luego se mide el tiempo que existe entre el 90\% y el 10\% de la amplitud de la señal de salida. Estos valores no son simétricos.
 
-\[A_{out_{\text{máx}}}= 5V\]
-\[A_{out_{\text{mín}}} = -4,5V\] 
+\[A_{out_{max}}= 5V\]
+\[A_{out_{min}} = -4,5V\] 
 \[A_{out_{90\%}}= 4,5V \space y \space A_{out_{10\%}}= -3,6V\]
 
 El tiempo medido es: \(39,6\mu s\). Se calcula entonces el Slew Rate.
 
 \[SR= \frac{9V}{39,6\mu s}= 0,227\frac{V}{\mu s}\]
 
-Comparando con el valor de la hoja de datos, se tiene un valor aproximado ya que el mismo es \(SR= 0,3 \frac{V}{\mu s}\).
+Comparando con el valor de la hoja de datos, se tiene un valor aproximado ya que el mismo es \(SR= 0,5 \frac{V}{\mu s}\).
 
 Luego se mide el ancho de banda. Se tiene una caída de \(-3~dB\) a la frecuencia \(f_{-3~dB}= 13KHz\).
-\begin{figure}[H]
+\begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\linewidth]{img/Banda de paso.jpeg}
-    \caption{Banda de paso}
-    
+    \includegraphics[width=0.7\linewidth]{img/Banda de paso.jpeg}
+    \caption{Banda de paso}   
 \end{figure}
-\begin{figure}[H]
+
+\newpage
+
+\begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\linewidth]{img/Ancho de banda.jpeg}
     \caption{Frecuencia de caída de -3dB}
-    
 \end{figure}
 
-Esto mismo se contrasta con la simulación, donde se obtiene una frecuencia \(f_{-3~dB}= 15KHz\) de caída de \(-3dB\).
+Esto mismo se contrasta con la simulación, donde se obtiene una frecuencia \(f_{-3~dB}= 17,12KHz\) de caída de \(-3dB\).
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{img/Lab2_Bode_3dB.png}
+    \caption{Frecuencia de caída de -3dB en diagrama de Bode}
+\end{figure}
