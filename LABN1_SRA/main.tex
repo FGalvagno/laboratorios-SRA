@@ -1,29 +1,29 @@
-\documentclass[12pt]{article}
-
+\documentclass{article}
 \usepackage[utf8]{inputenc}
-%\usepackage[spanish]{babel}
-\usepackage[spanish,es-tabla]{babel}
-% Set page size and margins
-% Replace `letterpaper' with `a4paper' for UK/EU standard size
-% \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
-\usepackage[a4paper,margin=1in]{geometry}
-% Useful packages
-\usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage[colorlinks=true, allcolors=blue]{hyperref}
-
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{amsmath}
+\usepackage[a4paper,margin=1in,footskip=.5cm]{geometry}
 \usepackage{subcaption}
+\setlength\headheight{30pt} 
+\usepackage{fancyhdr}
 \usepackage{amssymb}
+\usepackage[hidelinks]{hyperref}
 \usepackage{mathtools}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage[backend=bibtex]{biblatex}
 \usepackage{csquotes}
 \usepackage{float}
-
-\addbibresource{bibliografia.bib}
-
+\hypersetup{
+colorlinks = true,
+urlcolor=blue,
+linkcolor = black
+}
+\addbibresource{bibliography.bib} %archivo de bibliografia
 
 \begin{document}
+
+
 
 % agregamos la caratula
 \input{caratula}
@@ -37,7 +37,23 @@
 
 \section{Introducción}
 
+En el presente informe se desarrolla el analisis teórico de cuatro circuitos diferentes: 
 
+\begin{enumerate}
+    \item Amplificador diferencial
+    \item Fuente de corriente controlada por tensión
+    \item Rectificador de precisión
+    \item Comparador con histéresis
+\end{enumerate}
+
+Para contar con más comodidad a la hora de realizar mediciones, se utilizó Kicad para diseñar un PCB. El PCB se fabricó a modo de prototipo rápido.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{LABN1_SRA.png}
+    \caption{PCB utilizado para realizar mediciones}
+    \label{fig:enter-label}
+\end{figure}
 
 %Analisis1
 \input{Secciones/Circuito1/1-AnalisisTeorico}
@@ -52,6 +68,8 @@
 
 \input{Secciones/Circuito4/1-AnalisisTeorico}
 \newpage
+
+\input{Secciones/Conclusion}
 
 \printbibliography
 
