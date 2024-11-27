@@ -6,7 +6,7 @@ import pandas as pd
 import plotly.express as px
 
 # Colocar ruta del archivo generado en LTSpice
-file_path = 'C:/Users/Usuario/GASTON/Z Sintesis de Redes Activas/Ejercicios (Vs Code)/.venv(enviroment)/Lab2_SalidaEnElTiempo.txt'
+file_path = 'LABN2_SRA/LTSpice_data/Lab2_SalidaEnElTiempo.txt'
 data = pd.read_csv(file_path, sep='\t')
 
 # Plotear los datos
