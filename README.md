@@ -21,12 +21,16 @@ pip install scipy numpy matplotlib plotly
 ```
 
 # LTSpice
-Las simulaciones expuestas en el presente repositorio fueron realizadas utilizando LTspice de Analog Devices, para mas información ingresar a su [sitio web](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html)
 ![ltspice](https://images.sftcdn.net/images/t_app-icon-s/p/d55e21eb-857a-4b0e-8403-584ec5ce0543/1490032411/ltspice-icon.jpg)
 
+Las simulaciones expuestas en el presente repositorio fueron realizadas utilizando LTspice de Analog Devices, para mas información ingresar a su [sitio web](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html)
+
+
 # Kicad
-Algunos de los trabajos realizados requirieron el desarrollo de placas de circuito impreso (PCB). Se uso Kicad 8.0.6 para esta finalidad. Para más información, dirigirse al [sitio web](kicad.org) del proyecto.
 ![Kicad](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/KiCad-Logo.svg/335px-KiCad-Logo.svg.png)
+
+Algunos de los trabajos realizados requirieron el desarrollo de placas de circuito impreso (PCB). Se uso Kicad 8.0.6 para esta finalidad. Para más información, dirigirse al [sitio web](kicad.org) del proyecto.
+
 
 # Tutoriales
 
