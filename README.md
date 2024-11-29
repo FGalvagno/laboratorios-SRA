@@ -39,7 +39,7 @@ Algunos de los trabajos realizados requirieron el desarrollo de placas de circui
 
 # Tutoriales
 
-En este apartado del repositorio se colocará el acceso a diferentes tutoriales en video, realizados por los estudiantes, que profundizan un poco acerca del uso de las herramientas trabajadas durante el desarrollo de las presentes actividades
+En este apartado del repositorio se colocará el acceso a diferentes tutoriales en video realizados por los estudiantes que profundizan un poco acerca del uso de las herramientas utilizadas para el desarrollo de las actividades.
 
 ## LTspice
 - [Primer Tutorial: Instalación y Configuración de LTSpice + Componentes y Herramientas Incluidas](https://www.youtube.com/watch?v=8eU4OkuLDko)
