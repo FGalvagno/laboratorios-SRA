@@ -7,11 +7,11 @@ Este repositorio cuenta con los laboratorios de la asignatura Síntesis de Redes
 4. Filtros Activos
 
 # Instalación dependencias de Python
-Se utilizó Python para realizar la mayoría de los gráficos. A su vez en el cálculo de la aproximación de filtro de Chebyshev se usó numpy y scipy.
+En los trabajos se utilizó Python como herramienta de apoyo para el calculo y gráfico.
 
 ## Requisitos previos
 
-Para ejecutar los script de este repo, se necesita:
+Para ejecutar los script de este repositorio, se necesita:
 
 1. **Python 3.7 o una versión más reciente**: Descárgalo desde el [sitio web oficial de Python](https://www.python.org/downloads/).
 2. **Librerías requeridas**:
