@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.7,
-          "height": 1.4,
-          "width": 1.4
+          "drill": 0.762,
+          "height": 1.524,
+          "width": 1.524
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 1.0
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -179,7 +179,8 @@
       ],
       "track_widths": [
         0.0,
-        1.016
+        1.016,
+        2.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -445,7 +446,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "LABN1_SRA.kicad_pro",
+    "filename": "LABN2_SRA.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -483,8 +484,8 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "LABN1_SRA.step",
-      "svg": "C:/Users/Facundo Galvagno/Desktop/",
+      "step": "",
+      "svg": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -547,7 +548,7 @@
       "group_symbols": true,
       "name": "Grouped By Value",
       "sort_asc": true,
-      "sort_field": "Referencia"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -590,7 +591,7 @@
   },
   "sheets": [
     [
-      "5dad8d9f-335b-4703-a910-df4a2d6de689",
+      "6443f50e-234b-485e-a5a7-2469eed19d80",
       "Root"
     ]
   ],

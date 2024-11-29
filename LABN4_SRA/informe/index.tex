@@ -1,0 +1,92 @@
+\documentclass[a4paper,12pt]{article}
+%--------------Paquetes---------------------------------------------------------
+\usepackage[spanish]{babel}
+\usepackage{tikz}
+\usepackage{setspace}
+\usepackage{eso-pic}
+\usepackage{lipsum}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage[left=25mm, right=25mm, top=35mm, bottom=20mm,headheight=35mm] {geometry}
+\usepackage{lastpage}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{amssymb, amsmath}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{cancel}
+\usepackage{colortbl}
+\usepackage[table]{xcolor}
+\usepackage{array}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{white},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\small,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=none,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={},
+    pdfpagemode=FullScreen,
+    }
+
+\renewcommand{\figureautorefname}{Fig.}
+\renewcommand{\tableautorefname}{Tab.}
+\renewcommand{\equationautorefname}{Ec.}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\includegraphics[width=8cm]{figuras/color_UNC-FCEFyN.png}}
+\fancyhead[L]{Síntesis de Redes Activas - Filtros Activos}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.1pt}
+%\cfoot{}
+%---------------------------------------------------------------------------
+%declaro "variables"--------------------------------------------------------
+%\newcommand{\fecha}{\today}
+
+%comienzo del documento----------------------------------------------------
+\begin{document}
+	\include{portada.tex}
+	%--------------------------indice-------------------------------------------
+	\cleardoublepage
+	\tableofcontents
+	\cleardoublepage 
+	%---------------------------------------------------------------------------
+	\include{intro}
+        \include{intro_teorica}
+	\include{circuito1}
+	
+\end{document}
+
+
+

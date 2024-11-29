@@ -51,3 +51,10 @@ En este apartado del repositorio se colocará el acceso a diferentes tutoriales 
 - [Segundo Tutorial  - Utilización de Kicad para realizar esquemáticos](https://youtu.be/AmCJIVljmYw)
 - [Tercer Tutorial  - Asignación de huellas y exportación de componentes al PCB](https://youtu.be/4QtPsmXvcmw)
 - [Cuarto Tutorial - Creación de PCB usando Kicad](https://youtu.be/VFZ34iJKWYY)
+
+# Componentes Utilizados - Datasheets
+Esta sección contiene enlaces a los últimos datasheets disponibles de cada componente.
+
+- [LM324](https://www.ti.com/lit/gpn/lm324)
+- [TL072](https://www.ti.com/mx/lit/gpn/tl072)
+- [LM6181](https://www.mouser.com/ds/2/405/snos634c-522069.pdf)

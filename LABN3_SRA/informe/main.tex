@@ -1,0 +1,91 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{amsmath}
+\usepackage[a4paper,margin=1in,footskip=.5cm]{geometry}
+\usepackage{subcaption}
+\setlength\headheight{30pt} 
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+\usepackage[hidelinks]{hyperref}
+\usepackage{mathtools}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[backend=bibtex]{biblatex}
+\usepackage{csquotes}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{white},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\small,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+
+\hypersetup{
+colorlinks = true,
+urlcolor=blue,
+linkcolor = black
+}
+\addbibresource{bibliography.bib} %archivo de bibliografia
+
+\begin{document}
+
+\renewcommand{\figureautorefname}{Fig.}
+\renewcommand{\tableautorefname}{Tab.}
+\renewcommand{\equationautorefname}{Ec.}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\includegraphics[width=8cm]{img/color_UNC-FCEFyN.png}}
+\fancyhead[L]{Síntesis de Redes Activas - Diseño Amplificadores}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.1pt}
+% agregamos la caratula
+\input{caratula}
+\newpage
+
+% agregamos el indice
+\tableofcontents
+\newpage
+
+
+
+\newpage
+
+\input{seccion1}
+\newpage
+\input{seccion2}
+\newpage
+
+
+ 
+
+
+%Segun \cite{greenwade93}
+
+\printbibliography
+
+\end{document}
