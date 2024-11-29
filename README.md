@@ -34,7 +34,7 @@ Las simulaciones expuestas en el presente repositorio fueron realizadas utilizan
 # Kicad
 ![Kicad](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/KiCad-Logo.svg/335px-KiCad-Logo.svg.png)
 
-Algunos de los trabajos realizados requirieron el desarrollo de placas de circuito impreso (PCB). Se uso Kicad 8.0.6 para esta finalidad. Para más información, dirigirse al [sitio web](kicad.org) del proyecto.
+Algunos de los trabajos realizados requirieron el desarrollo de placas de circuito impreso (PCB). Se uso Kicad 8.0.6 para esta finalidad. Para más información, visite el [sitio web](kicad.org) del proyecto.
 
 
 # Tutoriales
@@ -47,13 +47,13 @@ En este apartado del repositorio se colocará el acceso a diferentes tutoriales 
 - [Tercer Tutorial: Simulación en LTSpice + Diagramas de Fase y Bode](https://www.youtube.com/watch?v=1XbrADAF3E8)
 
 ## Kicad
-- [Primer Tutorial  - Instalación de Kicad en Linux y Windows](https://youtu.be/r6Cftlv0W8k))
+- [Primer Tutorial  - Instalación de Kicad en Linux y Windows](https://youtu.be/r6Cftlv0W8k)
 - [Segundo Tutorial  - Utilización de Kicad para realizar esquemáticos](https://youtu.be/AmCJIVljmYw)
 - [Tercer Tutorial  - Asignación de huellas y exportación de componentes al PCB](https://youtu.be/4QtPsmXvcmw)
 - [Cuarto Tutorial - Creación de PCB usando Kicad](https://youtu.be/VFZ34iJKWYY)
 
 # Componentes Utilizados - Datasheets
-Esta sección contiene enlaces a los últimos datasheets disponibles de cada componente.
+Esta sección contiene enlaces a los últimos datasheets disponibles de cada integrado.
 
 - [LM324](https://www.ti.com/lit/gpn/lm324)
 - [TL072](https://www.ti.com/mx/lit/gpn/tl072)
