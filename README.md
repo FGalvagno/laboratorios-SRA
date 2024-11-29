@@ -1,5 +1,10 @@
-# laboratorios-SRA
+# Laboratorios SRA 2024
 Este repositorio cuenta con los laboratorios de la asignatura Síntesis de Redes Activas, de la carrera de Ingeniería en Electrónica de la FCEFyN - UNC.
+
+1. Amplificadores Operacionales Ideales
+2. Amplificadores Operacionales Reales
+3. Diseño de Amplificadores
+4. Filtros Activos
 
 # Instalación dependencias de Python
 Se utilizó Python para realizar la mayoría de los gráficos. A su vez en el cálculo de la aproximación de filtro de Chebyshev se usó numpy y scipy.
