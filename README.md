@@ -38,7 +38,7 @@ Algunos de los trabajos realizados requirieron el desarrollo de placas de circui
 
 ## BOM de los proyectos realizados
 Los BOM de las placas diseñadas se pueden encontrar en sus respectivas carpetas:
-- [BOM TP1](https://htmlpreview.github.io/?https://github.com/FGalvagno/laboratorios-SRA/tree/main/LABN1_SRA/kicad/LABN1_SRA/bom/ibom.html)
+- [BOM TP1](https://htmlpreview.github.io/?https://github.com/FGalvagno/laboratorios-SRA/blob/main/LABN1_SRA/kicad/LABN1_SRA/bom/ibom.html)
 - [BOM TP2](https://htmlpreview.github.io/?https://github.com/FGalvagno/laboratorios-SRA/blob/main/LABN2_SRA/kicad/LABN2_SRA/bom/ibom.html)
 
 
