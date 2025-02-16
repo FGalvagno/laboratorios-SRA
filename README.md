@@ -36,6 +36,11 @@ Las simulaciones expuestas en el presente repositorio fueron realizadas utilizan
 
 Algunos de los trabajos realizados requirieron el desarrollo de placas de circuito impreso (PCB). Se uso Kicad 8.0.6 para esta finalidad. Para más información, visite el [sitio web](kicad.org) del proyecto.
 
+## BOM de los proyectos realizados
+Los BOM de las placas diseñadas se pueden encontrar en sus respectivas carpetas:
+- [BOM TP1](https://htmlpreview.github.io/?https://github.com/FGalvagno/laboratorios-SRA/blob/main/LABN1_SRA/kicad/LABN1_SRA/bom/ibom.html)
+- [BOM TP2](https://htmlpreview.github.io/?https://github.com/FGalvagno/laboratorios-SRA/blob/main/LABN2_SRA/kicad/LABN2_SRA/bom/ibom.html)
+
 
 # Tutoriales
 
