@@ -18,7 +18,7 @@ class Config:
 if Config.Y_VAR == 'IL':
     
     # Colocar ruta del archivo generado en LTSpice
-    with open("[Ruta]/[Nombre_del_archivo].txt", "r") as file:
+    with open("LABN1_SRA/LTSpice_data/TP1_2_i_vs_Vin_RL.txt", "r") as file:
         lines = file.readlines()
         
     # Procesar las líneas del archivo
@@ -52,7 +52,7 @@ if Config.Y_VAR == 'IL':
 elif Config.Y_VAR == 'Vo':
     
     # Colocar ruta del archivo generado en LTSpice
-    with open("[Ruta]/[Nombre_del_archivo].txt", "r") as file:
+    with open("LABN1_SRA/LTSpice_data/TP1_2_Vo_vs_Vin_RL.txt", "r") as file:
         lines = file.readlines()
         
     # Procesar las líneas del archivo
